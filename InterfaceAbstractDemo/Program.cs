@@ -15,7 +15,7 @@ namespace InterfaceAbstractDemo
         static void Main(string[] args)
         {
             BaseCustomerManager customerManager = new StarbucksCustomerManager(new MernisServiceAdapter());
-            // Kullanıcı kendi Tc bilgilerini girer.
+            // Projenin çalışması için kullanıcı kendi bilgilerini girmeli.
             customerManager.Save(new Customer
             {
                 DateOfBirth = new DateTime(1996, 1, 1),
