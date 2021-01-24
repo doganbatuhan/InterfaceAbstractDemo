@@ -15,12 +15,13 @@ namespace InterfaceAbstractDemo
         static void Main(string[] args)
         {
             BaseCustomerManager customerManager = new StarbucksCustomerManager(new MernisServiceAdapter());
+            // Kullanıcı kendi Tc bilgilerini girer.
             customerManager.Save(new Customer
             {
                 DateOfBirth = new DateTime(1996, 1, 1),
-                FirstName = "Batuhan",
-                LastName = "Doğan",
-                NationalityId = ""
+                FirstName = "", 
+                LastName = "",
+                NationalityId = "" 
             });
 
             Console.ReadLine();
